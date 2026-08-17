@@ -1,0 +1,133 @@
+*,*::before, *::after{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: rgb(24, 24, 24);
+    background-color: rgb(155, 162, 180);
+    line-height: 1.5;
+}
+a{
+    color: rgb(19, 18, 18);
+}
+/*----------------------------Navbar-----------------*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem 2rem;
+    background:rgb(236, 171, 171);
+    color: blueviolet
+} ;
+.navbar .brand{
+font-weight: 700;
+text-decoration: none;
+color: rgb(5, 5, 5);
+font-size: 1.05rem;
+}
+.nav-links{
+   display: flex; 
+   gap: 1.5rem;
+}
+.nav-links a{
+    color: rgb(14, 14, 13);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+main{
+    padding: 3rem 1.5rem;
+}
+.auth-wrap{
+    display: flex;
+    justify-content: center;
+}
+.auth-card{
+   background-color: white; 
+   border-radius: 12px;
+   padding: 2.5rem;
+   width: 100%;
+   max-width: 420px;
+   box-shadow: 0 8px 24px;
+   color: rgb(48, 3, 94);
+}
+.auth-card h1{
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+.subtext{
+  color: rgb(114, 110, 110);  
+  margin-bottom: 1.5rem;
+  font-size: 0.5rem;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1.4rem;
+}
+.form-group label{
+   font-size: .8rem;
+   font-weight: 800;
+}
+.form-group input{
+    padding: 0.68rem 0.8rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+.form-group input:focus,
+.form-group select:focus{
+    outline: none;
+    border-color: rgb(71, 71, 155);
+    box-shadow: 0 0 0 3px rgb(68, 184, 116);;
+}
+
+
+.form-group input:focus,
+.form-group select:focus{
+    outline: none;
+    border-color: #3452e1;
+    box-shadow: 0 0 0 3px rgba(52, 82, 225, 0.15);
+}
+
+
+.btn-primary {
+  width: 100%;
+  padding: 0.75rem;
+  background: #3452e1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.btn-primary:hover {
+  background: #2a41c2;
+}
+
+.error-text {
+  display: none;
+  color: #b3261e;
+  font-size: 0.85rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+.error-text.visible {
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 1.75rem;
+  }
+}
+
